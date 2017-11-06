@@ -6,12 +6,22 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 # Data to be represented
-X = np.linespace(-np.pi, +np.pi, 256)
+X = np.linspace(-np.pi, +np.pi, 256)
 Y = np.sin(X)
 
 # Actual plotting
 fig = plt.figure(figsize=(8, 6), dpi=72, facecolor='white')
-axes = plot.subplot(111)
+axes = plt.subplot(111)
 axes.plot(X, Y, color='blue', linewidth=2, linestyle='-')
 axes.set_xlim(X.min(), X.max())
-axes.set_ylim(Y.min(), y.max())
+axes.set_ylim(Y.min(), Y.max())
+
+axes.spines['right'].set_color('none')
+axes.spines['top'].set_color('none')
+axes.xaxis.set_ticks_position('bottom')
+axes.spines['bottom'].set_position(('data', 0))
+
+axes.yaxis.set_ticks_position('left')
+axes.spines['left'].set_position(('data', X.min()))
+
+plt.show()
