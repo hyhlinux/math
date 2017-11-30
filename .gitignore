@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+#
+demo/demo_s3.py
 demo_s3*.py
 demo/demo_boto3.py
 demo/demo_s3.ipynb
