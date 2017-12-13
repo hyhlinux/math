@@ -42,7 +42,8 @@ print(host, access_key, secret_key)
 #     with open(pre, "w") as f:
 #         f.write(data)
 preList = [
-    "Y29tLmFuZHJvaWQuY2hyb21lX2ljb25fMzIwMjA4NDAxX2hmZTBuZDBs",
+    "/apk/d7c9b87308d6cfe1e3c803740f02ef7d.apk"
+    # "Y29tLmFuZHJvaWQuY2hyb21lX2ljb25fMzIwMjA4NDAxX2hmZTBuZDBs",
     # 299834_20170531090536.png_20170531060531452
     # "Mjk5ODM0XzIwMTcwNTMxMDkwNTM2LnBuZ18yMDE3MDUzMTA2MDUzMTQ1Mg.png",
     # 357888_20170528120503.png_20170528170505119
@@ -69,7 +70,7 @@ def main():
         print("conn:", conn)
         return
 
-    bucket = conn.get_bucket("image")
+    bucket = conn.get_bucket("upload")
     print(bucket)
     for pre in preList:
         # pre = "avatar/" + pre
@@ -77,11 +78,11 @@ def main():
         if not key:
             continue
         print(key)
+        print(key, key.get_acl(), key.set_acl(""))
         data = key.read()
         print('len:', len(data))
         with open('/tmp/'+pre, "w") as f:
             f.write(str(data))
         
-        # print(key, key.get_acl(), key.set_acl(""))
 if __name__ == '__main__':
     main()
