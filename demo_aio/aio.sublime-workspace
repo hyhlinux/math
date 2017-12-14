@@ -1,0 +1,769 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"M",
+				"MongoClient"
+			],
+			[
+				"clear",
+				"clear_canvas"
+			],
+			[
+				"si",
+				"show_sin"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"go_",
+				"go_email/proto                                                          ?"
+			],
+			[
+				"pr",
+				"Printf\tn int, err error ƒ"
+			],
+			[
+				"Eve",
+				"events.EventEmitter();"
+			],
+			[
+				"createServer",
+				"net.createServer(options, connectionListener);"
+			],
+			[
+				"close",
+				"fs.close(fd, callback);"
+			],
+			[
+				"se",
+				"setTimeout(callback, after, arg1, arg2, arg3);"
+			],
+			[
+				"redis",
+				"redis-data-B"
+			],
+			[
+				"redis-data",
+				"redis-data-A"
+			],
+			[
+				"no",
+				"node-1"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"kin",
+				"kibana"
+			],
+			[
+				"e",
+				"elasticsearch"
+			],
+			[
+				"n",
+				"next"
+			],
+			[
+				"link",
+				"link1"
+			],
+			[
+				"new",
+				"new_link"
+			],
+			[
+				"from",
+				"format"
+			],
+			[
+				"nO",
+				"None"
+			],
+			[
+				"tok",
+				"token"
+			],
+			[
+				"token",
+				"token_js"
+			],
+			[
+				"data",
+				"data_app"
+			],
+			[
+				"i",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"im",
+				"import\timport (...) ʂ"
+			],
+			[
+				"fu",
+				"func main\tfunc main {...} ʂ"
+			],
+			[
+				"sen",
+				"sendMail"
+			],
+			[
+				"dump",
+				"dumps\tfunction"
+			],
+			[
+				"pre",
+				"prefix_new\tstatement"
+			],
+			[
+				"log",
+				"logging\tmodule"
+			],
+			[
+				"s",
+				"second\tinstance"
+			],
+			[
+				"p",
+				"patter"
+			],
+			[
+				"in",
+				"info"
+			],
+			[
+				"lo",
+				"logging"
+			],
+			[
+				"mail",
+				"mailId"
+			],
+			[
+				"min",
+				"mailInfo"
+			],
+			[
+				"de",
+				"debug\tfunction"
+			],
+			[
+				"un",
+				"unicode\tclass"
+			],
+			[
+				"las",
+				"lasMailUid\tstatement"
+			],
+			[
+				"es",
+				"else"
+			],
+			[
+				"wr",
+				"writelines\tfunction"
+			],
+			[
+				"read",
+				"readlines\tfunction"
+			],
+			[
+				"obj",
+				"objectid"
+			],
+			[
+				"er",
+				"error"
+			],
+			[
+				"debu",
+				"Debug"
+			],
+			[
+				"l",
+				"Log\tstatement"
+			],
+			[
+				"por",
+				"protos\tmodule"
+			],
+			[
+				"for",
+				"formatter\tstatement"
+			],
+			[
+				"De",
+				"DEBUG\tstatement"
+			],
+			[
+				"confj",
+				"confJsonDict\tglobalstmt"
+			],
+			[
+				"set",
+				"setting\tmodule"
+			],
+			[
+				"conf",
+				"confJson"
+			],
+			[
+				"con",
+				"confJsonDict\tstatement"
+			],
+			[
+				"re",
+				"redis_options\tstatement"
+			],
+			[
+				"j",
+				"confJson\tstatement"
+			],
+			[
+				"mailS",
+				"mailSerJson\tstatement"
+			],
+			[
+				"fa",
+				"False\tinstance"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"checkm",
+				"checkMailInJson\tfunction"
+			],
+			[
+				"u",
+				"url"
+			],
+			[
+				"do",
+				"doRemoveApp\tfunction"
+			],
+			[
+				"fro",
+				"fromStr\tstatement"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"fil",
+				"filepath\tstatement"
+			],
+			[
+				"_ap",
+				"__package\tstatement"
+			],
+			[
+				"sudo",
+				"sudo_user"
+			],
+			[
+				"du",
+				"dumps\tfunction"
+			],
+			[
+				"img",
+				"imgfit_conf\tstatement"
+			],
+			[
+				"__",
+				"__bin"
+			],
+			[
+				"wih",
+				"with"
+			],
+			[
+				"pa",
+				"package_file"
+			],
+			[
+				"whi",
+				"with"
+			],
+			[
+				"func",
+				"func\tfunc {...} ʂ"
+			],
+			[
+				"app",
+				"app_package_name\t ν"
+			],
+			[
+				"app_de",
+				"app_developer\tstring ν"
+			],
+			[
+				"fi",
+				"ChildrenFiltered\t*goquery.Selection ƒ"
+			],
+			[
+				"h",
+				"HttpClient\tstruct ʈ"
+			],
+			[
+				"prin",
+				"Println\t ƒ"
+			],
+			[
+				"get",
+				"getX2AndX3_2"
+			],
+			[
+				"prit",
+				"Printf"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					""
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Install"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Cross-Compile (Interactive)"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Golang Build/Go.sublime-build",
+				"Test"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 239.0,
+		"last_filter": "pep8",
+		"selected_items":
+		[
+			[
+				"pep8",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"pre",
+				"Pretty JSON: Validate"
+			],
+			[
+				"jas",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"pr",
+				"Pretty JSON: Validate"
+			],
+			[
+				"JSON",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/apple/github/math/demo_aio"
+	],
+	"file_history":
+	[
+		"/Users/apple/github/math/demo_aio/asyncio_coroutine_return.py",
+		"/Users/apple/github/math/demo_aio/asyncio_coroutine.py",
+		"/Users/apple/github/math/demo_aio/aio.sublime-project",
+		"/Users/apple/github/math/demo_aio/test.py",
+		"/Users/apple/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/apple/github/AntiSpider/utils/esapi.py",
+		"/Users/apple/github/AntiSpider/handlers/Auto.py",
+		"/Users/apple/github/AntiSpider/handlers/BaseHandler.py",
+		"/Users/apple/github/AntiSpider/server.py",
+		"/Users/apple/github/AntiSpider/urls.py",
+		"/Users/apple/github/AntiSpider/t.json",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_tornado/06es_spider/esapi.py",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/aio/es_test/es_spider.py",
+		"/Users/apple/go-dev/src/ansible/inventories/staging/_hosts",
+		"/Users/apple/go-dev/src/ansible/playbooks/s3upload.yml",
+		"/Users/apple/go-dev/src/ansible/inventories/staging/app",
+		"/Users/apple/go-dev/src/ansible/inventories/staging/group_vars/all.yaml",
+		"/Users/apple/apkpure.com/library/services/s3upload.js",
+		"/Users/apple/github/hk/mysite/polls/views.py",
+		"/Users/apple/github/hk/mysite/polls/urls.py",
+		"/Users/apple/github/hk/mysite/mysite/settings.py",
+		"/Users/apple/github/hk/mysite/mysite/urls.py",
+		"/Users/apple/github/ansible_hk/playbooks/pong.yml",
+		"/Users/apple/github/ansible_hk/playbooks/elk.yaml",
+		"/Users/apple/github/ansible_hk/inventories/staging/app",
+		"/Users/apple/github/ansible_hk/my_modules/pong",
+		"/Users/apple/github/ansible_hk/ansible.cfg",
+		"/Users/apple/github/ansible_hk/libary/pong",
+		"/Users/apple/github/ansible_hk/inventories/staging/group_vars/redis.yml",
+		"/Users/apple/go-dev/src/ansible/playbooks/fs_router.yml",
+		"/Users/apple/github/ansible_hk/playbooks/s5.yaml",
+		"/Users/apple/github/ansible_hk/inventories/staging/group_vars/elk.yaml",
+		"/Users/apple/github/ansible_hk/roles/clayman74.elk/defaults/main.yml",
+		"/Users/apple/github/ansible_hk/playbooks/docker-redis.yml",
+		"/Users/apple/github/ansible_hk/roles/redis/tasks/main.yml",
+		"/Users/apple/github/ansible_hk/roles/matic-insurance.docker-redis/defaults/main.yml",
+		"/Users/apple/figure_1.png",
+		"/Users/apple/github/math/demo/Y29tLmFuZHJvaWQuY2hyb21lX2ljb25fMzIwMjA4NDAxX2hmZTBuZDBs",
+		"/Users/apple/github/math/demo_kv/demo_box_kvl.py",
+		"/Users/apple/github/math/demo_kv/demo_box.py",
+		"/Users/apple/github/math/demo_kv/demo_bt.py",
+		"/Users/apple/github/math/demo_kv/demo_login.py",
+		"/Users/apple/github/math/demo_kv.py",
+		"/Users/apple/go-dev/src/imgfit/controllers/cache.go",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/tools/safe/yt.yml",
+		"/Users/apple/go-dev/src/ansible/inventories/staging/group_vars/crawler_gp.yml",
+		"/Users/apple/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/Users/apple/go-dev/src/s3upload/config/config.go",
+		"/Users/apple/go-dev/src/s3upload/routers/router.go",
+		"/Users/apple/go-dev/src/s3upload/logger/log.go",
+		"/Users/apple/go-dev/src/s3upload/config/config_test.go",
+		"/Users/apple/go-dev/src/s3upload/storage/s3.go",
+		"/Users/apple/go-dev/src/s3upload/storage/s3_test.go",
+		"/Users/apple/go-dev/src/s3upload/storage/storage.go",
+		"/Users/apple/Library/Application Support/Sublime Text 3/Packages/Godef/Godef.sublime-settings",
+		"/Users/apple/github/math/01Elementaryfunction/readme.md",
+		"/Users/apple/github/math/01Elementaryfunction/spines-2.py",
+		"/Users/apple/github/math/01Elementaryfunction/sin.py",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/aio/example.json",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/aio/example.log",
+		"/Users/apple/go-dev/src/crawler-gp/models/stats.go",
+		"/Users/apple/go-dev/src/crawler-gp/waiter/wait_test.go",
+		"/Users/apple/go-dev/src/crawler-gp/common/httpcli.go",
+		"/Users/apple/go-dev/src/ip_proxy/routers/router.go",
+		"/Users/apple/go-dev/src/ip_proxy/main.go",
+		"/Users/apple/go-dev/src/ip_proxy/config/config.go",
+		"/Users/apple/go-dev/src/ip_proxy/logger/log.go",
+		"/Users/apple/go-dev/src/ip_proxy/models/appinfo.go",
+		"/Users/apple/go-dev/src/ip_proxy/config/config_test.go",
+		"/Users/apple/github/docker-elk/kibana/config/kibana.yml",
+		"/Users/apple/github/docker-elk/elasticsearch/config/elasticsearch.yml",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_tornado/03/web.py",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_tornado/03/call_order.py",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_tornado/03/write.py",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_tornado/03/login.py",
+		"/Users/apple/go-dev/src/proto-define/protos/log_request.proto",
+		"/Users/apple/go-dev/src/proto-define/protos/log_event.proto",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_tornado/01hello/ser_debug.py",
+		"/Users/apple/go-dev/src/ansible/inventories/staging/group_vars/log_collect.yml",
+		"/Users/apple/go-dev/src/ansible/playbooks/log_collect.yml",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/site/views/login.ejs",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/site/views/head.ejs",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/site/views/foot.ejs",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/site/package-lock.json",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/11httpfileser.js",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/index.html",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/10colors.js",
+		"/Users/apple/go-dev/src/ansible/inventories/staging/group_vars/email.yml",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/11.try.js",
+		"/Users/apple/go-dev/src/ansible/playbooks/email.yml",
+		"/Users/apple/go-dev/src/ansible/inventories/staging/hosts",
+		"/Users/apple/go-dev/src/ansible/playbooks/email.yaml",
+		"/Users/apple/go-dev/src/go_email/config/config_test.go",
+		"/Users/apple/go-dev/src/go_email/config/config.go",
+		"/Users/apple/go-dev/src/go_email/main.go",
+		"/Users/apple/go-dev/src/go_email/controllers/email.go",
+		"/Users/apple/go-dev/src/go_email/controllers/email_grpc.go",
+		"/Users/apple/go-dev/src/go_email/conf/app.yml",
+		"/Users/apple/go-dev/src/server-grpc/protos/aws_email.proto",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/07model_01.js",
+		"/Users/apple/apkpure.com/script.js",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/05http_cli.js",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/05http_ser.js",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/script_node_es_test.txt",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/04tcp_cli.js",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/04tcp_ser.js",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/stu_node/03settime.js",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/01Teaching_management_system01/main.py",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/01Teaching_management_system01/library/student.py",
+		"/Users/apple/Library/Mobile Documents/com~apple~CloudDocs/script_py/01Teaching_management_system01/library/staff.py",
+		"/Users/apple/patch/apkpure_library_171009.patch",
+		"/Users/apple/github/docker_ssr/Dockerfile",
+		"/Users/apple/github/docker-elk/logstash/pipeline/event_search.conf",
+		"/Users/apple/github/docker-elk/logstash/pipeline/log_session.conf",
+		"/Users/apple/github/docker-elk/logstash/pipeline/logstash.yml",
+		"/Users/apple/github/docker-elk/grafana/Dockerfile",
+		"/Users/apple/github/pg_logstash/.gitlab-ci.yml",
+		"/Users/apple/github/pg_logstash/pipeline/logstash.yml",
+		"/Users/apple/github/pg_logstash/readme.md",
+		"/Users/apple/github/docker-elk/logstash/Dockerfile",
+		"/Users/apple/github/docker-elk/run.md",
+		"/Users/apple/github/docker-elk/kibana/Dockerfile",
+		"/Users/apple/github/docker-elk/elasticsearch/Dockerfile",
+		"/Users/apple/github/elk_bin/elasticsearch-5.5.2/config/elasticsearch.yml",
+		"/Users/apple/github/docker-elk/logstash_only.yml",
+		"/Users/apple/go-dev/src/ansible/inventories/staging/group_vars/elk.yml",
+		"/Users/apple/go-dev/src/ansible/roles/elk/files/es_client/elasticsearch.yml",
+		"/Users/apple/go-dev/src/ansible/roles/elk/files/es_data/elasticsearch.yml"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///Applications/Sublime Text.app/Contents/MacOS":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/apple/go-dev/serv-conf":
+	{
+		"height": 88.0
+	},
+	"output.9o:///Users/apple/go-dev/src/abuse-robot":
+	{
+		"height": 356.0
+	},
+	"output.9o:///Users/apple/go-dev/src/webgp":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/apple/work":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/apple/work/main":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/apple/work/src/github.com/user/hello":
+	{
+		"height": 100.0
+	},
+	"output.GoSublime-main-output":
+	{
+		"height": 94.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 58.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 100.0
+	},
+	"output.browse":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 174.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.gotools_syntax_errors":
+	{
+		"height": 96.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Anaconda Python Builder",
+	"project": "aio.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
