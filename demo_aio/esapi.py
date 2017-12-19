@@ -1,7 +1,8 @@
 import datetime
 import asyncio
 import elasticsearch
-from aioes import Elasticsearch as AsyncElasticsearch
+# from aioes import Elasticsearch as AsyncElasticsearch
+from elasticsearch_async import AsyncElasticsearch
 from log import get_log
 
 logger = get_log()
@@ -29,6 +30,9 @@ class ES(object):
             sniffer_timeout=600
         )
         return aioes
+
+    def aio_close(self):
+        self.aioes.transport.close()
 
     @staticmethod
     def connect_host(hosts=hosts):
