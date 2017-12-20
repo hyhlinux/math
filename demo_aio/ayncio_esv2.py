@@ -18,7 +18,7 @@ async def do():
     print('waiting for phases to complete')
     cur_time = now()
     top_ip = es.get_top_ip(100)
-    phases= [get_rate_ip(ip.get('key', '')) for ip in top_ip]
+    phases = [get_rate_ip(ip.get('key', '')) for ip in top_ip]
     completed, pending = await asyncio.wait(phases)
     for index, t in enumerate(completed):
         print(index, t.result())
