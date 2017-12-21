@@ -1,0 +1,12 @@
+async-timeout==2.0.0
+chardet==3.0.4
+elasticsearch==6.0.0
+elasticsearch_async==5.2.0
+multidict==3.3.2
+pandas==0.21.0
+python-dateutil==2.6.1
+pytz==2017.3
+aiohttp==2.3.6
+six==1.11.0
+urllib3==1.22
+yarl==0.16.0
