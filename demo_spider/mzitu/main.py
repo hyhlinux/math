@@ -1,6 +1,8 @@
+import os
 import requests
 from lxml import etree
 
+base_dir = "./testData"
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36"}
 
@@ -24,8 +26,18 @@ class MZITUSpider(object):
                 continue
             uid_home = self.get_uid_page(uid_link[1])
             child_link_list = self.pare_uid_child_page(uid_home)
+            if not child_link_list:
+                continue
             for link in child_link_list:
-                print("{}/{}".format(uid_link[1], link))
+                child_link = "{}/{}".format(uid_link[1], link)
+                img_links = self.parse_img_from_child_page(child_link)
+                if not img_links:
+                    continue
+                print("page:{} img_link:{}".format(child_link, img_links))
+                for img_link in img_links:
+                    if not img_link:
+                        continue
+                    self.download_img(img_link)
 
     def parse_home(self, body=None):
         tree = etree.HTML(body)
@@ -50,6 +62,28 @@ class MZITUSpider(object):
         if span_list and len(span_list) > 2:
             span_list = span_list[1:-1]
         return span_list
+
+    def parse_img_from_child_page(self, url=""):
+        if not url:
+            return None
+        body = requests.get(url, headers=headers)
+        if not body:
+            return None
+        child_tree = etree.HTML(body.text)
+        img_link = child_tree.xpath(
+            "//div[contains(@class, 'main-image')]//img/@src")
+        return img_link
+
+    def download_img(self, url=""):
+        if not url:
+            return None
+        print('dl:', url)
+        img = requests.get(url, headers=headers)
+        if not img:
+            return None
+        file_name = url.replace("/", "_", -1)
+        with open(os.path.join(base_dir, file_name), 'wb') as f:
+            f.write(img.content)
 
 
 def main():
