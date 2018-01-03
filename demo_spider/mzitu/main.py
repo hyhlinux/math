@@ -78,6 +78,7 @@ class MZITUSpider(object):
         if not url:
             return None
         print('dl:', url)
+        headers['Referer'] = 'http://www.mzitu.com/'
         img = requests.get(url, headers=headers)
         if not img:
             return None
