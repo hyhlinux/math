@@ -4,12 +4,12 @@ import pandas as pd
 
 
 last = 0
+
 def get_hash_map(url="http://172.16.1.104:4004/stats?which=app"):
     resp = requests.get(url)
     data = resp.json()
     hash_map = data.get("hostGroupMap", {}).get("default", {}).get("HashMap", {})
     return hash_map
-
 
 
 def get_diff(val):
@@ -46,6 +46,12 @@ def to_cvs(ret_list=None, columns=['host_name', 'hash', 'diff']):
     return
 
 
+def get_request_count(url="http://172.16.1.104:4004/stats"):
+    resp = requests.get(url)
+    data = resp.json()
+    request_map = data.get("hostGroupStatsMap", {}).get("default", {}).get("HostMap", {})
+    return request_map
+
 def main():
     hash_map = get_hash_map()
     hash_map_sort = sorted(hash_map.items(), key=lambda d: int(d[0]))
@@ -57,7 +63,16 @@ def main():
     labels = [key for key in diff_map.keys()]
     sizes = [v for v in diff_map.values()]
     show_pie(labels, sizes)
-    pass
+    request_map = get_request_count()
+    print(request_map)
+    if not request_map:
+        return
+    for k, v in request_map.items():
+        print(k, v)
+    request_labels = [key for key in request_map.keys()]
+    request_sizes = [v for v in request_map.values()]
+    show_pie(request_labels, request_sizes)
+
 
 if __name__ == '__main__':
     main()
