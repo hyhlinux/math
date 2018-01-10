@@ -49,21 +49,27 @@ def to_cvs(ret_list=None, columns=['host_name', 'hash', 'diff']):
 def get_request_count(url="http://172.16.1.104:4004/stats"):
     resp = requests.get(url)
     data = resp.json()
-    request_map = data.get("hostGroupStatsMap", {}).get("default", {}).get("HostMap", {})
+    # request_map = data.get("hostGroupStatsMap", {}).get("default", {}).get("HostMap", {})
+    request_map = data.get("hostGroupStatsMap", {}).get("default", {})
     return request_map
 
+
 def main():
-    hash_map = get_hash_map()
-    hash_map_sort = sorted(hash_map.items(), key=lambda d: int(d[0]))
-    ret_list = [(k[1], k[0], get_diff(int(k[0])))  for k in hash_map_sort]
-    to_cvs(ret_list)
-    diff_map = diff_sum(ret_list)
-    for k, v in diff_map.items():
-        print(k, v)
-    labels = [key for key in diff_map.keys()]
-    sizes = [v for v in diff_map.values()]
-    show_pie(labels, sizes)
-    request_map = get_request_count()
+    # url="http://192.168.6.14:4004/stats?which=app"
+    url = "http://172.16.1.104:4004/stats?which=app"
+    # hash_map = get_hash_map(url)
+    # hash_map_sort = sorted(hash_map.items(), key=lambda d: int(d[0]))
+    # ret_list = [(k[1], k[0], get_diff(int(k[0])))  for k in hash_map_sort]
+    # to_cvs(ret_list)
+    # diff_map = diff_sum(ret_list)
+    # for k, v in diff_map.items():
+    #     print(k, v)
+    # labels = [key for key in diff_map.keys()]
+    # sizes = [v for v in diff_map.values()]
+    # show_pie(labels, sizes)
+    # url="http://192.168.6.14:4004/stats?which="
+    url=url[:-3]
+    request_map = get_request_count(url)
     print(request_map)
     if not request_map:
         return
