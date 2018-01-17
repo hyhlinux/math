@@ -54,21 +54,22 @@ def get_request_count(url="http://172.16.1.104:4004/stats"):
     return request_map
 
 
-def main():
-    # url="http://192.168.6.14:4004/stats?which=app"
-    url = "http://172.16.1.104:4004/stats?which=app"
-    # hash_map = get_hash_map(url)
-    # hash_map_sort = sorted(hash_map.items(), key=lambda d: int(d[0]))
-    # ret_list = [(k[1], k[0], get_diff(int(k[0])))  for k in hash_map_sort]
-    # to_cvs(ret_list)
-    # diff_map = diff_sum(ret_list)
-    # for k, v in diff_map.items():
-    #     print(k, v)
-    # labels = [key for key in diff_map.keys()]
-    # sizes = [v for v in diff_map.values()]
-    # show_pie(labels, sizes)
-    # url="http://192.168.6.14:4004/stats?which="
-    url=url[:-3]
+def app_pie(url=""):
+    hash_map = get_hash_map(url)
+    hash_map_sort = sorted(hash_map.items(), key=lambda d: int(d[0]))
+    ret_list = [(k[1], k[0], get_diff(int(k[0])))  for k in hash_map_sort]
+    to_cvs(ret_list)
+    diff_map = diff_sum(ret_list)
+    for k, v in diff_map.items():
+        print(k, v)
+    labels = [key for key in diff_map.keys()]
+    sizes = [v for v in diff_map.values()]
+    show_pie(labels, sizes)
+    return
+
+
+def request_pie(url=""):
+    # url = "http://192.168.6.14:4004/stats?which="
     request_map = get_request_count(url)
     print(request_map)
     if not request_map:
@@ -78,6 +79,15 @@ def main():
     request_labels = [key for key in request_map.keys()]
     request_sizes = [v for v in request_map.values()]
     show_pie(request_labels, request_sizes)
+    return
+
+
+def main():
+    url = "http://192.168.0.96:4004/stats?which=app"
+    # url = "http://172.16.1.104:4004/stats?which=app"
+    app_pie(url)
+    # url = url[:-3]
+    # request_pie(url)
 
 
 if __name__ == '__main__':
