@@ -83,11 +83,11 @@ def request_pie(url=""):
 
 
 def main():
-    url = "http://192.168.0.96:4004/stats?which=app"
-    # url = "http://172.16.1.104:4004/stats?which=app"
-    app_pie(url)
-    # url = url[:-3]
-    # request_pie(url)
+    # url = "http://192.168.0.96:4004/stats?which=app"
+    url = "http://172.16.1.104:4004/stats?which=app"
+    # app_pie(url)
+    url = url[:-3]
+    request_pie(url)
 
 
 if __name__ == '__main__':
