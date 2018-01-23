@@ -54,6 +54,7 @@ def pie_host_del():
     sizes = [v for v in data_map.values()]
     show_pie(labels=labels, sizes=sizes)
 
+
 def main():
     pie_host_del()
     # pie_host()
