@@ -60,7 +60,7 @@ def jump_hash(key, hosts=None, host_die='host1'):
         health_hosts.remove(host_die)
     move_ret = jump.hash(binascii.crc32(new_key) & 0xffffffff, len(health_hosts))
     move_cnt += 1
-    print('转移: {}->{}  key:{}, new_key:{}, ret:{}: move_ret:{}'.format(hosts[ret], health_hosts[move_ret], key, new_key, ret, move_ret))
+    # print('转移: {}->{}  key:{}, new_key:{}, ret:{}: move_ret:{}'.format(hosts[ret], health_hosts[move_ret], key, new_key, ret, move_ret))
     global move_map
     move_map[health_hosts[move_ret]] += 1
     return health_hosts[move_ret]
@@ -84,15 +84,15 @@ def jump_hash2(key, hosts=None, host_die='host1'):
         move_ret = 0
     if hosts[ret] != health_hosts[move_ret]:
         move_cnt += 1
-        print('转移: {}->{} key:{}, ret:{}: move_ret:{}'.format(hosts[ret], health_hosts[move_ret], key, ret, move_ret))
+        # print('转移: {}->{} key:{}, ret:{}: move_ret:{}'.format(hosts[ret], health_hosts[move_ret], key, ret, move_ret))
     return health_hosts[move_ret]
 
 
 def pie_host_del():
     data_map = {}
-    for i in range(1000):
+    for i in range(10000):
         fid = bytes("/b/apk/Y29tLm1vYmlsZS5sZWdlbmRzXzExNTIxMzMxX2U4ZGIzOTM{:0>5}".format(i), encoding='utf-8')
-        host_die = 'host2'
+        host_die = 'host1'
         host = jump_hash(fid, hosts, host_die=host_die)
         # print("{},{},{}".format(i, fid, host))
         # key = hostMap.get("{}".format(host), "default")
@@ -106,7 +106,8 @@ def pie_host_del():
     # show_pie(labels=labels, sizes=sizes)
     print('move_cnt:', move_cnt)
     print('move_map:', move_map)
-    del move_map[host_die]
+    if host_die in move_map:
+        del move_map[host_die]
     labels = [key for key in move_map.keys()]
     sizes = [v for v in move_map.values()]
     show_pie(labels=labels, sizes=sizes)
