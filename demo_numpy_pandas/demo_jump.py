@@ -3,7 +3,7 @@ import binascii
 import matplotlib.pyplot as plt
 
 hosts = [
-    "host1",
+    # "host1",
     "host2",
     "host3",
     "host4",
@@ -39,7 +39,7 @@ def pie_host():
 
 def pie_host_del():
     data_map = {}
-    for i in range(10000):
+    for i in range(1000):
         fid = bytes("/b/apk/Y29tLm1vYmlsZS5sZWdlbmRzXzExNTIxMzMxX2U4ZGIzOTM{:0>5}".format(i), encoding='utf-8')
         ret = jump.hash(binascii.crc32(fid) & 0xffffffff, len(hosts))
         # ret = jump.hash(i, len(hosts))
