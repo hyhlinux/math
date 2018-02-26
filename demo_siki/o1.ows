@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="The basic data mining units in Orange are called widgets. There are widgets for reading the data, preprocessing, visualization, clustering, classification and others. Widgets communicate through channels. Data mining workflow is thus a collection of widgets and communication channels.&#10;&#10;In this workflow, there is a File widget that reads the data. File widget communicates this data to Data Table widget that shows the data spreadsheet. Notice how the output of the file widget is connected to the input of the Data Table widget. In Orange, the outputs of the widgets are on the right, and the inputs on the left of the widget." title="File and Data Table" version="2.0">
+	<nodes>
+		<node id="0" name="File" position="(40.0, 146.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owfile.OWFile" title="File" version="" />
+		<node id="1" name="Data Table" position="(290.0, 157.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+		<node id="2" name="Scatter Plot" position="(319.0, 303.0)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" title="Scatter Plot" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="0" />
+	</links>
+	<annotations>
+		<text font-family="Helvetica" font-size="14" id="0" rect="(17.0, 21.0, 160.0, 55.0)" type="text/plain">A File widget. Double click to open it and select the dataset file.</text>
+		<text font-family="Helvetica" font-size="14" id="1" rect="(50.0, 229.0, 118.0, 40.0)" type="text/plain">The output of the File widget.</text>
+		<text font-family="Helvetica" font-size="14" id="2" rect="(241.0, 227.0, 131.0, 41.0)" type="text/plain">The input of the Data Table widget.</text>
+		<text font-family="Helvetica" font-size="14" id="3" rect="(138.0, 297.0, 150.0, 82.0)" type="text/plain">The communication channel. It passes the dataset from the File widget to the Data Table.</text>
+		<text font-family="Helvetica" font-size="14" id="4" rect="(262.0, 21.0, 150.0, 68.0)" type="text/plain">A Data Table widget. Double click the icon to see the data in a spreadsheet.</text>
+		<text font-family="Helvetica" font-size="14" id="5" rect="(415.0, 68.0, 150.0, 83.0)" type="text/plain">The output of the Data Table to send out any data (rows) that are selected to the widget.</text>
+		<text font-family="Helvetica" font-size="14" id="6" rect="(489.0, 177.0, 216.0, 181.0)" type="text/plain">This output is not used, hence dashed line. You can add another Data Table by clicking on its icon from the toolbox on the left, connect the ouput of Data Table to the input of new Data Table (1) and check if the selected data from Data Table is indeed sent to the downstream widget. This demo works best if both widgets are open, that is, their windows displayed.</text>
+		<arrow end="(88.00000000000004, 122.00000000000001)" fill="#C1272D" id="7" start="(89.00000000000004, 76.00000000000001)" />
+		<arrow end="(285.0, 129.0)" fill="#C1272D" id="8" start="(279.0, 86.00000000000001)" />
+		<arrow end="(117.0, 180.0)" fill="#C1272D" id="9" start="(140.0, 229.0)" />
+		<arrow end="(256.0, 171.0)" fill="#C1272D" id="10" start="(249.0, 224.0)" />
+		<arrow end="(194.99999999999997, 159.0)" fill="#C1272D" id="11" start="(195.99999999999997, 297.0)" />
+		<arrow end="(328.0, 166.99999999999997)" fill="#39B54A" id="12" start="(488.0, 197.99999999999997)" />
+		<arrow end="(327.0, 141.00000000000003)" fill="#C1272D" id="13" start="(414.0, 105.00000000000001)" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYDAAAAHJlY2VudF9wYXRoc3ECXXEDKGNP
+cmFuZ2Uud2lkZ2V0cy51dGlscy5maWxlZGlhbG9ncwpSZWNlbnRQYXRoCnEEKYFxBX1xBihYBwAA
+AGFic3BhdGhxB1iAAAAAL0FwcGxpY2F0aW9ucy9PcmFuZ2UzLmFwcC9Db250ZW50cy9GcmFtZXdv
+cmtzL1B5dGhvbi5mcmFtZXdvcmsvVmVyc2lvbnMvMy42L2xpYi9weXRob24zLjYvc2l0ZS1wYWNr
+YWdlcy9PcmFuZ2UvZGF0YXNldHMvaXJpcy50YWJxCFgGAAAAcHJlZml4cQlYDwAAAHNhbXBsZS1k
+YXRhc2V0c3EKWAcAAAByZWxwYXRocQtYCAAAAGlyaXMudGFicQxYBQAAAHRpdGxlcQ1YAAAAAHEO
+WAUAAABzaGVldHEPaA5YCwAAAGZpbGVfZm9ybWF0cRBOdWJoBCmBcRF9cRIoaAdYgwAAAC9BcHBs
+aWNhdGlvbnMvT3JhbmdlMy5hcHAvQ29udGVudHMvRnJhbWV3b3Jrcy9QeXRob24uZnJhbWV3b3Jr
+L1ZlcnNpb25zLzMuNi9saWIvcHl0aG9uMy42L3NpdGUtcGFja2FnZXMvT3JhbmdlL2RhdGFzZXRz
+L2hvdXNpbmcudGFicRNoCWgKaAtYCwAAAGhvdXNpbmcudGFicRRoDWgOaA9oDmgQTnViaAQpgXEV
+fXEWKGgHWH8AAAAvQXBwbGljYXRpb25zL09yYW5nZTMuYXBwL0NvbnRlbnRzL0ZyYW1ld29ya3Mv
+UHl0aG9uLmZyYW1ld29yay9WZXJzaW9ucy8zLjYvbGliL3B5dGhvbjMuNi9zaXRlLXBhY2thZ2Vz
+L09yYW5nZS9kYXRhc2V0cy9jYXIudGFicRdoCWgKaAtYBwAAAGNhci50YWJxGGgNaA5oD2gOaBBO
+dWJoBCmBcRl9cRooaAdYgwAAAC9BcHBsaWNhdGlvbnMvT3JhbmdlMy5hcHAvQ29udGVudHMvRnJh
+bWV3b3Jrcy9QeXRob24uZnJhbWV3b3JrL1ZlcnNpb25zLzMuNi9saWIvcHl0aG9uMy42L3NpdGUt
+cGFja2FnZXMvT3JhbmdlL2RhdGFzZXRzL3RpdGFuaWMudGFicRtoCWgKaAtYCwAAAHRpdGFuaWMu
+dGFicRxoDWgOaA9oDmgQTnViaAQpgXEdfXEeKGgHWIkAAAAvQXBwbGljYXRpb25zL09yYW5nZTMu
+YXBwL0NvbnRlbnRzL0ZyYW1ld29ya3MvUHl0aG9uLmZyYW1ld29yay9WZXJzaW9ucy8zLjYvbGli
+L3B5dGhvbjMuNi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRhc2V0cy9oZWFydF9kaXNlYXNlLnRh
+YnEfaAloCmgLWBEAAABoZWFydF9kaXNlYXNlLnRhYnEgaA1oDmgPaA5oEE51YmVYCwAAAHJlY2Vu
+dF91cmxzcSFdcSJYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxI0MyAdnQywACAAAAAAGaAAAAagAA
+A/EAAAKlAAABmgAAAIAAAAPxAAACpQAAAAAAAAAABaBxJFgLAAAAc2hlZXRfbmFtZXNxJX1xJlgG
+AAAAc291cmNlcSdLAFgDAAAAdXJscShoDlgNAAAAZG9tYWluX2VkaXRvcnEpfXEqWAsAAABfX3Zl
+cnNpb25fX3ErSwFYEAAAAGNvbnRleHRfc2V0dGluZ3NxLF1xLShjT3JhbmdlLndpZGdldHMuc2V0
+dGluZ3MKQ29udGV4dApxLimBcS99cTAoWAQAAAB0aW1lcTFHQdaj36U6T+NYBgAAAHZhbHVlc3Ey
+fXEzKFgJAAAAdmFyaWFibGVzcTRdcTVYCQAAAHhsc19zaGVldHE2aA5K/////4ZxN2gpfXE4aDRd
+cTkoXXE6KFgMAAAAc2VwYWwgbGVuZ3RocTtjT3JhbmdlLmRhdGEudmFyaWFibGUKQ29udGludW91
+c1ZhcmlhYmxlCnE8SwBoDohlXXE9KFgLAAAAc2VwYWwgd2lkdGhxPmg8SwBoDohlXXE/KFgMAAAA
+cGV0YWwgbGVuZ3RocUBoPEsAaA6IZV1xQShYCwAAAHBldGFsIHdpZHRocUJoPEsAaA6IZV1xQyhY
+BAAAAGlyaXNxRGNPcmFuZ2UuZGF0YS52YXJpYWJsZQpEaXNjcmV0ZVZhcmlhYmxlCnFFSwFYLAAA
+AElyaXMtc2V0b3NhLCBJcmlzLXZlcnNpY29sb3IsIElyaXMtdmlyZ2luaWNhcUaJZWVzaCtLAXVY
+CgAAAGF0dHJpYnV0ZXNxRyhYDAAAAHNlcGFsIGxlbmd0aHFISwKGcUlYCwAAAHNlcGFsIHdpZHRo
+cUpLAoZxS1gMAAAAcGV0YWwgbGVuZ3RocUxLAoZxTVgLAAAAcGV0YWwgd2lkdGhxTksChnFPdHFQ
+WAUAAABtZXRhc3FRKVgKAAAAY2xhc3NfdmFyc3FSWAQAAABpcmlzcVNdcVQoWAsAAABJcmlzLXNl
+dG9zYXFVWA8AAABJcmlzLXZlcnNpY29sb3JxVlgOAAAASXJpcy12aXJnaW5pY2FxV2WGcViFcVlY
+EgAAAG1vZGlmaWVkX3ZhcmlhYmxlc3FaXXFbdWJoLimBcVx9cV0oaDFHQdaj32qOSvloMn1xXiho
+NF1xX2g2aA5K/////4ZxYGgpfXFhaDRdcWIoXXFjKFgEAAAAQ1JJTXFkaDxLAGgOiGVdcWUoWAIA
+AABaTnFmaDxLAGgOiGVdcWcoWAUAAABJTkRVU3FoaDxLAGgOiGVdcWkoWAQAAABDSEFTcWpoPEsA
+aA6IZV1xayhYAwAAAE5PWHFsaDxLAGgOiGVdcW0oWAIAAABSTXFuaDxLAGgOiGVdcW8oWAMAAABB
+R0VxcGg8SwBoDohlXXFxKFgDAAAARElTcXJoPEsAaA6IZV1xcyhYAwAAAFJBRHF0aDxLAGgOiGVd
+cXUoWAMAAABUQVhxdmg8SwBoDohlXXF3KFgHAAAAUFRSQVRJT3F4aDxLAGgOiGVdcXkoWAEAAABC
+cXpoPEsAaA6IZV1xeyhYBQAAAExTVEFUcXxoPEsAaA6IZV1xfShYBAAAAE1FRFZxfmg8SwFoDohl
+ZXNoK0sBdWhHKGhkSwKGcX9oZksChnGAaGhLAoZxgWhqSwKGcYJobEsChnGDaG5LAoZxhGhwSwKG
+cYVocksChnGGaHRLAoZxh2h2SwKGcYhoeEsChnGJaHpLAoZximh8SwKGcYt0cYxoUSloUmh+SwKG
+cY2FcY5oWl1xj3ViaC4pgXGQfXGRKGgxR0HWo99nDCM1aDJ9cZIoaDRdcZNoNmgOSv////+GcZRo
+KX1xlWg0XXGWKF1xlyhYBgAAAGJ1eWluZ3GYaEVLAFgWAAAAdi1oaWdoLCBoaWdoLCBtZWQsIGxv
+d3GZiWVdcZooWAUAAABtYWludHGbaEVLAFgWAAAAdi1oaWdoLCBoaWdoLCBtZWQsIGxvd3GciWVd
+cZ0oWAUAAABkb29yc3GeaEVLAFgPAAAAMiwgMywgNCwgNS1tb3JlcZ+JZV1xoChYBwAAAHBlcnNv
+bnNxoWhFSwBYCgAAADIsIDQsIG1vcmVxoollXXGjKFgHAAAAbHVnYm9vdHGkaEVLAFgPAAAAc21h
+bGwsIG1lZCwgYmlncaWJZV1xpihYBgAAAHNhZmV0eXGnaEVLAFgOAAAAbG93LCBtZWQsIGhpZ2hx
+qIllXXGpKFgBAAAAeXGqaEVLAVgYAAAAdW5hY2MsIGFjYywgZ29vZCwgdi1nb29kcauJZWVzaCtL
+AXVoRyhYBgAAAGJ1eWluZ3GsXXGtKFgGAAAAdi1oaWdoca5YBAAAAGhpZ2hxr1gDAAAAbWVkcbBY
+AwAAAGxvd3GxZYZxslgFAAAAbWFpbnRxs11xtChYBgAAAHYtaGlnaHG1WAQAAABoaWdocbZYAwAA
+AG1lZHG3WAMAAABsb3dxuGWGcblYBQAAAGRvb3JzcbpdcbsoWAEAAAAycbxYAQAAADNxvVgBAAAA
+NHG+WAYAAAA1LW1vcmVxv2WGccBYBwAAAHBlcnNvbnNxwV1xwihovGi+WAQAAABtb3JlccNlhnHE
+WAcAAABsdWdib290ccVdccYoWAUAAABzbWFsbHHHWAMAAABtZWRxyFgDAAAAYmlnccllhnHKWAYA
+AABzYWZldHlxy11xzChYAwAAAGxvd3HNWAMAAABtZWRxzlgEAAAAaGlnaHHPZYZx0HRx0WhRKWhS
+aKpdcdIoWAUAAAB1bmFjY3HTWAMAAABhY2Nx1FgEAAAAZ29vZHHVWAYAAAB2LWdvb2Rx1mWGcdeF
+cdhoWl1x2XViZXUu
+</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgOAAAAY29sb3JfYnlfY2xhc3NxAohYEgAAAGNvbnRy
+b2xBcmVhVmlzaWJsZXEDiFgOAAAAZGlzdF9jb2xvcl9SR0JxBChL3EvcS9xL/3RxBVgTAAAAc2F2
+ZWRXaWRnZXRHZW9tZXRyeXEGQzIB2dDLAAIAAAAAAAoAAACFAAAFnwAAAzUAAAAKAAAAmwAABZ8A
+AAM1AAAAAAAAAAAFoHEHWAsAAABzZWxlY3Rfcm93c3EIiFgVAAAAc2hvd19hdHRyaWJ1dGVfbGFi
+ZWxzcQmIWBIAAABzaG93X2Rpc3RyaWJ1dGlvbnNxColYCwAAAF9fdmVyc2lvbl9fcQtLAVgQAAAA
+Y29udGV4dF9zZXR0aW5nc3EMXXENKGNPcmFuZ2Uud2lkZ2V0cy5zZXR0aW5ncwpDb250ZXh0CnEO
+KYFxD31xEChYBgAAAHZhbHVlc3ERfXESKFgNAAAAc2VsZWN0ZWRfY29sc3ETXXEUWA0AAABzZWxl
+Y3RlZF9yb3dzcRVdcRZoC0sBdVgFAAAAbWV0YXNxF31xGFgOAAAAb3JkZXJlZF9kb21haW5xGV1x
+GihYDAAAAHNlcGFsIGxlbmd0aHEbSwKGcRxYCwAAAHNlcGFsIHdpZHRocR1LAoZxHlgMAAAAcGV0
+YWwgbGVuZ3RocR9LAoZxIFgLAAAAcGV0YWwgd2lkdGhxIUsChnEiWAQAAABpcmlzcSNLAYZxJGVY
+CgAAAGF0dHJpYnV0ZXNxJX1xJihoIUsCaBtLAmgfSwJoI11xJyhYCwAAAElyaXMtc2V0b3NhcShY
+DwAAAElyaXMtdmVyc2ljb2xvcnEpWA4AAABJcmlzLXZpcmdpbmljYXEqZWgdSwJ1WAQAAAB0aW1l
+cStHQdaj36VFUid1YmgOKYFxLH1xLShoK0dB1qPfaphLi2gRfXEuKGgTXXEvaBVdcTBoC0sBdWgl
+fXExKFgEAAAAQ1JJTXEySwJYAgAAAFpOcTNLAlgFAAAASU5EVVNxNEsCWAQAAABDSEFTcTVLAlgD
+AAAATk9YcTZLAlgCAAAAUk1xN0sCWAMAAABBR0VxOEsCWAMAAABESVNxOUsCWAMAAABSQURxOksC
+WAMAAABUQVhxO0sCWAcAAABQVFJBVElPcTxLAlgBAAAAQnE9SwJYBQAAAExTVEFUcT5LAlgEAAAA
+TUVEVnE/SwJ1aBd9cUB1YmgOKYFxQX1xQihoK0dB1qPfZxQP/mgRfXFDKGgTXXFEaBVdcUVoC0sB
+dWglfXFGKFgGAAAAYnV5aW5ncUddcUgoWAYAAAB2LWhpZ2hxSVgEAAAAaGlnaHFKWAMAAABtZWRx
+S1gDAAAAbG93cUxlWAUAAABtYWludHFNXXFOKFgGAAAAdi1oaWdocU9YBAAAAGhpZ2hxUFgDAAAA
+bWVkcVFYAwAAAGxvd3FSZVgFAAAAZG9vcnNxU11xVChYAQAAADJxVVgBAAAAM3FWWAEAAAA0cVdY
+BgAAADUtbW9yZXFYZVgHAAAAcGVyc29uc3FZXXFaKGhVaFdYBAAAAG1vcmVxW2VYBwAAAGx1Z2Jv
+b3RxXF1xXShYBQAAAHNtYWxscV5YAwAAAG1lZHFfWAMAAABiaWdxYGVYBgAAAHNhZmV0eXFhXXFi
+KFgDAAAAbG93cWNYAwAAAG1lZHFkWAQAAABoaWdocWVlWAEAAAB5cWZdcWcoWAUAAAB1bmFjY3Fo
+WAMAAABhY2NxaVgEAAAAZ29vZHFqWAYAAAB2LWdvb2Rxa2V1aBd9cWx1YmV1Lg==
+</properties>
+		<properties format="pickle" node_id="2">gAN9cQAoWAsAAABhdXRvX3NhbXBsZXEBiFgTAAAAYXV0b19zZW5kX3NlbGVjdGlvbnECiFgSAAAA
+Y29udHJvbEFyZWFWaXNpYmxlcQOIWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQRDMgHZ0MsAAgAA
+AAABTAAAAF0AAASOAAADNgAAAUwAAABzAAAEjgAAAzYAAAAAAAAAAAWgcQVYDwAAAHNlbGVjdGlv
+bl9ncm91cHEGTlgRAAAAdG9vbGJhcl9zZWxlY3Rpb25xB0sAWAUAAABncmFwaHEIfXEJKFgLAAAA
+YWxwaGFfdmFsdWVxCkuAWA0AAABjbGFzc19kZW5zaXR5cQuJWBEAAABqaXR0ZXJfY29udGludW91
+c3EMiVgLAAAAaml0dGVyX3NpemVxDUsKWBMAAABsYWJlbF9vbmx5X3NlbGVjdGVkcQ6JWAsAAABw
+b2ludF93aWR0aHEPSwpYCQAAAHNob3dfZ3JpZHEQiFgLAAAAc2hvd19sZWdlbmRxEYhYDQAAAHNo
+b3dfcmVnX2xpbmVxEolYEQAAAHRvb2x0aXBfc2hvd3NfYWxscROJdVgLAAAAX192ZXJzaW9uX19x
+FEsCWBAAAABjb250ZXh0X3NldHRpbmdzcRVdcRYoY09yYW5nZS53aWRnZXRzLnNldHRpbmdzCkNv
+bnRleHQKcRcpgXEYfXEZKFgEAAAAdGltZXEaR0HWo9+lTDj4WAYAAAB2YWx1ZXNxG31xHChYBgAA
+AGF0dHJfeHEdWAwAAABzZXBhbCBsZW5ndGhxHktmhnEfWAYAAABhdHRyX3lxIFgEAAAAaXJpc3Eh
+S2WGcSJoCH1xIyhYCgAAAGF0dHJfY29sb3JxJGghS2WGcSVYCgAAAGF0dHJfbGFiZWxxJk5K/v//
+/4ZxJ1gKAAAAYXR0cl9zaGFwZXEoTkr+////hnEpWAkAAABhdHRyX3NpemVxKk5K/v///4ZxK3Vo
+FEsCdVgKAAAAYXR0cmlidXRlc3EsfXEtKGgeSwJYCwAAAHNlcGFsIHdpZHRocS5LAlgMAAAAcGV0
+YWwgbGVuZ3RocS9LAlgLAAAAcGV0YWwgd2lkdGhxMEsCaCFLAXVYBQAAAG1ldGFzcTF9cTJ1YmgX
+KYFxM31xNChoGkdB1qPfia5gA2gbfXE1KGgdWAUAAABMU1RBVHE2S2aGcTdoIFgFAAAASU5EVVNx
+OEtmhnE5aAh9cTooaCRYBAAAAE1FRFZxO0tmhnE8aCZOSv7///+GcT1oKE5K/v///4ZxPmgqTkr+
+////hnE/dWgUSwJ1aCx9cUAoWAQAAABDUklNcUFLAlgCAAAAWk5xQksCaDhLAlgEAAAAQ0hBU3FD
+SwJYAwAAAE5PWHFESwJYAgAAAFJNcUVLAlgDAAAAQUdFcUZLAlgDAAAARElTcUdLAlgDAAAAUkFE
+cUhLAlgDAAAAVEFYcUlLAlgHAAAAUFRSQVRJT3FKSwJYAQAAAEJxS0sCaDZLAmg7SwJ1aDF9cUx1
+YmV1Lg==
+</properties>
+	</node_properties>
+</scheme>
