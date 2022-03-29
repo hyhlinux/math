@@ -63,7 +63,7 @@ oauthlib==2.0.2
 olefile==0.44
 pandas==0.21.0
 pandocfilters==1.4.1
-paramiko==2.2.1
+paramiko==2.10.1
 PasteDeploy==1.5.2
 pathlib2==2.3.0
 pexpect==4.2.1
